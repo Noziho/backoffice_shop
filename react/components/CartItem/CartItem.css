@@ -1,0 +1,30 @@
+.items {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.item {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.item > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trash {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

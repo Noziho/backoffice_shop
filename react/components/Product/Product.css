@@ -1,0 +1,44 @@
+.products {
+    width: 50%;
+    margin-left: 4rem;
+    background: #F1F1F1;
+    padding: 1rem;
+}
+
+.quantitySelector {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quantitySelector > div {
+    margin-inline: 1rem;
+}
+
+.quantitySelectorButton {
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: #00a0dc;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.productFooter {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.describeProduct {
+    width: 70%;
+}
+
+.price {
+    width: 10%;
+}

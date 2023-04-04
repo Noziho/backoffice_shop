@@ -1,0 +1,23 @@
+.productList {
+    width: 100%;
+    min-height: 60rem;
+    background: #F1F1F1;
+}
+
+.singleProduct {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 90%;
+}
+
+
+.productName {
+    width: 100%;
+}
+
+.describeProduct {
+    width: 70%;
+    margin-left: 5rem;
+}
