@@ -1,12 +1,11 @@
 import React from "react";
 import "./Header.css";
-import logo from "../../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 
-export const Header = function ({ title }) {
+export const Header = function () {
   return (
     <header>
-      <img src={logo} alt="Shop logo" />
+      <img src='/uploads/logo.png' alt="Shop logo" />
       <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/promotions">Promotions</Link>

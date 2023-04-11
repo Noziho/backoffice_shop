@@ -5,7 +5,7 @@ export const ProductList = function ({category,products, setIsProductUpdated})  
     return (
         <div className='productList'>
             {products
-                .filter(product => category === 0 || product.category === category)
+                .filter(product => category === 0 || product.category.id === category)
                 .map(product => <Product key={product.id} product={product} setIsProductUpdated={setIsProductUpdated}/>
             )}
         </div>

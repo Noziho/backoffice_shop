@@ -18,7 +18,8 @@ export const Product = function ({product, setIsProductUpdated}) {
     return (
         <div className="singleProduct">
             <div className="thumbnailContainer">
-                <img className={'thumbnail'} src={require(`./../../../assets/img/${product.image}`)} alt=""/>
+                <p>{product.category.name}</p>
+                <img className={'thumbnail'} src={(`/uploads/${product.image}`)} alt=""/>
             </div>
 
 

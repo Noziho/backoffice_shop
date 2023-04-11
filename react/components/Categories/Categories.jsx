@@ -1,11 +1,16 @@
 import './Categories.css';
+import {useEffect, useState} from "react";
 
 export const Categories = function ({setCategory}) {
-    const categories = [
-        {id:0, name: 'Tout'},
-        {id:1, name: 'autres'},
-        {id:2, name: 'hardware'},
-    ];
+    const [categories, setCategories] = useState([]);
+    useEffect(() => {
+        async function getCategories () {
+            const data = await fetch('/api/categories');
+            setCategories(await data.json());
+        }
+        getCategories()
+            .catch(() => console.log('Erreur de récupération des catégories'));
+    }, [])
 
     return(
         <>
